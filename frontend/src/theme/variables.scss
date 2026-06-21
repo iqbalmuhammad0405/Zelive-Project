@@ -1,0 +1,98 @@
+/* Zelive Gen-Z Neon Synthwave Theme */
+:root {
+  --ion-color-primary: #c032f0;
+  --ion-color-primary-rgb: 192,50,240;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #a92cd4;
+  --ion-color-primary-tint: #c647f2;
+
+  --ion-color-secondary: #00e5ff;
+  --ion-color-secondary-rgb: 0,229,255;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0,0,0;
+  --ion-color-secondary-shade: #00cae0;
+  --ion-color-secondary-tint: #1ae8ff;
+
+  --ion-color-success: #2dd36f;
+  --ion-color-success-rgb: 45,211,111;
+  --ion-color-success-contrast: #000000;
+  --ion-color-success-contrast-rgb: 0,0,0;
+  --ion-color-success-shade: #28ba62;
+  --ion-color-success-tint: #42d77d;
+
+  --ion-font-family: 'Outfit', sans-serif;
+
+  --border-radius-card: 20px;
+  --border-radius-button: 16px;
+
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+
+  /* Force premium dark mode aesthetic by default */
+  --ion-background-color: #0A0B10;
+  --ion-background-color-rgb: 10,11,16;
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255,255,255;
+
+  --ion-card-background: #131422;
+  
+  --ion-item-background: #131422;
+  --ion-item-color: #ffffff;
+}
+
+/* Overriding prefers-color-scheme to force dark mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --ion-background-color: #0A0B10;
+    --ion-background-color-rgb: 10,11,16;
+    --ion-text-color: #ffffff;
+    --ion-text-color-rgb: 255,255,255;
+    --ion-card-background: #131422;
+  }
+}
+
+/* Global design overrides to enforce smooth, rounded corners across Ionic */
+ion-card {
+  --border-radius: var(--border-radius-card);
+  border-radius: var(--border-radius-card) !important;
+  border: 1px solid rgba(192, 50, 240, 0.1) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+ion-button {
+  --border-radius: var(--border-radius-button) !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+ion-item {
+  --border-radius: 14px;
+  border-radius: 14px !important;
+  margin-bottom: 8px;
+  --inner-border-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+ion-input, ion-textarea, ion-select {
+  --border-radius: 12px;
+  --background: rgba(255, 255, 255, 0.03);
+  --padding-start: 12px;
+  --padding-end: 12px;
+}
+
+.glass-panel {
+  background: rgba(19, 20, 34, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-card);
+  border: 1px solid rgba(192, 50, 240, 0.15);
+}
+
+.premium-gradient-text {
+  background: linear-gradient(90deg, var(--ion-color-primary), var(--ion-color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

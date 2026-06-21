@@ -1,0 +1,39 @@
+# Laravel backend
+backend/vendor/
+backend/node_modules/
+backend/.env
+backend/.phpunit.result.cache
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/storage/logs/
+backend/public/storage
+
+# Angular/Ionic frontend
+frontend/node_modules/
+frontend/www/
+frontend/.angular/
+frontend/android/
+frontend/ios/
+frontend/.sourcemaps/
+frontend/coverage/
+frontend/dist/
+
+# OS/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Other
+zelive key
+zelive_postman_collection.json
+*.zip
+*.tar.gz
+
+# Firebase Service Account
+backend/storage/app/firebase/service-account.json

@@ -1,0 +1,59 @@
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar for modern feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 50, 240, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 50, 240, 0.4);
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(192, 50, 240, 0.4);
+}
+
+.neon-glow-secondary {
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+}
+
+.glass-card {
+  background: rgba(19, 20, 34, 0.65) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(192, 50, 240, 0.15) !important;
+}
+
+.synthwave-gradient-bg {
+  background: linear-gradient(135deg, #c032f0 0%, #00e5ff 100%) !important;
+  color: #000000 !important;
+}
+
+.synthwave-gradient-text {
+  background: linear-gradient(90deg, #c032f0, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
